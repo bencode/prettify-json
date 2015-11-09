@@ -1,0 +1,30 @@
+{
+  "name": "prettify-json",
+  "version": "0.1.0",
+  "description": "prettify json object for output",
+  "main": "lib/index.js",
+  "scripts": {
+    "eslint": "node ./node_modules/.bin/eslint lib test",
+    "test": "node ./node_modules/.bin/_mocha --harmony --require 'should' --reporter spec --recursive --bail --check-leaks test/",
+    "test-cov": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u exports --require 'should' --recursive --bail --check-leaks test/",
+    "test-travis": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -u exports --require 'should' --recursive --bail --check-leaks test/",
+    "all": "npm run eslint && npm run test && npm run test-cov"
+  },
+  "devDependencies": {
+    "eslint": "~1.9.0",
+    "eslint-config-bce": "~0.1.0",
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3",
+    "should": "~7.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencode/prettify-json.git"
+  },
+  "author": "bencode@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bencode/prettify-json/issues"
+  },
+  "homepage": "https://github.com/bencode/prettify-json#readme"
+}

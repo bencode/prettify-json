@@ -9,5 +9,13 @@ var o = {
   name: 'hello'
 };
 
-prettifyJSON(o);
+var json = prettifyJSON(o);
+```
+
+then you can use it in html template file
+
+```html
+<pre>
+{{json}}
+</pre>
 ```

@@ -1,15 +1,16 @@
 # prettify-json
+
 prettify json object for output
 
 
 ```js
-var prettifyJSON = require('prettify-json');
+const prettifyJSON = require('prettify-json');
 
-var o = {
+const o = {
   name: 'hello'
 };
 
-var json = prettifyJSON(o);
+const json = prettifyJSON(o);
 ```
 
 then you can use it in html template file

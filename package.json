@@ -1,21 +1,16 @@
 {
   "name": "prettify-json",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "prettify json object for output",
   "main": "lib/index.js",
   "scripts": {
-    "eslint": "node ./node_modules/.bin/eslint lib test",
-    "test": "node ./node_modules/.bin/_mocha --harmony --require 'should' --reporter spec --recursive --bail --check-leaks test/",
-    "test-cov": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u exports --require 'should' --recursive --bail --check-leaks test/",
-    "test-travis": "node --harmony ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- -u exports --require 'should' --recursive --bail --check-leaks test/",
-    "all": "npm run eslint && npm run test && npm run test-cov"
+    "lint": "eslint .",
+    "test": "jest ."
   },
   "devDependencies": {
-    "eslint": "~1.9.0",
-    "eslint-config-bce": "~0.1.0",
-    "istanbul": "~0.4.0",
-    "mocha": "~2.3.3",
-    "should": "~7.1.1"
+    "eslint": "^5.8.0",
+    "eslint-config-bce": "^5.0.0",
+    "jest": "^23.6.0"
   },
   "repository": {
     "type": "git",
